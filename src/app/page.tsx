@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectCard from "@/projects/component";
+import ProjectCard from "@/components/component";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { useRef } from "react";
 import { SiGmail } from "react-icons/si";
