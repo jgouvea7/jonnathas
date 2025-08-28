@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <div className="flex items-start justify-center min-h-screen bg-neutral-800">
-      <div className="flex flex-col md:flex-row w-11/12 max-w-6xl h-[98vh] md:h-[100vh] overflow-hidden gap-8">
+      <div className="flex flex-col md:flex-row w-11/12 max-w-6xl h-[98dvh] md:h-[100vh] overflow-hidden gap-8">
         <aside className="w-full md:w-1/2 bg-neutral-800 text-neutral-100 flex flex-col items-center md:items-start p-8 md:mt-18 gap-4">
           <h1 className="text-4xl md:text-5xl font-bold text-neutral-100 drop-shadow-lg text-center md:text-left cursor-default">
             Jonnathas Gouvea
