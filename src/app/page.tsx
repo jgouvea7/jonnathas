@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex items-start justify-center min-h-screen bg-neutral-800">
+    <div className="flex items-start justify-center min-h-screen bg-neutral-800 overflow-hidden">
       <div className="flex flex-col md:flex-row w-11/12 max-w-6xl h-[98dvh] md:h-[100vh] overflow-hidden gap-8">
         <aside className="w-full md:w-1/2 bg-neutral-800 text-neutral-100 flex flex-col items-center md:items-start p-8 md:mt-18 gap-4">
           <h1 className="text-4xl md:text-5xl font-bold text-neutral-100 drop-shadow-lg text-center md:text-left cursor-default">
@@ -50,7 +50,7 @@ export default function Home() {
             </button>
           </nav>
 
-          <div className="mt-8 md:mt-130 flex gap-6">
+          <div className="mt-8 md:mt-auto flex gap-6">
             <a
               href="https://www.linkedin.com/in/jgouvea7"
               target="_blank"
