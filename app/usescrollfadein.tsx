@@ -21,6 +21,11 @@ export function useScrollFadeIn<T extends HTMLElement>() {
 
     observer.observe(element);
 
+    if (element.getBoundingClientRect().top < window.innerHeight) {
+      element.classList.add("visible");
+      observer.unobserve(element);
+    }
+
     return () => {
       if (element) observer.unobserve(element);
     };

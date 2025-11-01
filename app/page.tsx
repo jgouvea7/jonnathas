@@ -145,7 +145,7 @@ export default function Home() {
 
         <section ref={contactRef} className="fade-in mt-10 text-center">
           <h3 className="text-2xl font-semibold mb-2">Contato</h3>
-          <p className="text-neutral-400 text-xl mb-20">Para mais informações!</p>
+          <p className="text-neutral-400 text-xl mb-4">Para mais informações!</p>
 
           <div className="flex items-center justify-center gap-6">
             <a
