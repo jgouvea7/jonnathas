@@ -115,7 +115,7 @@ export default function Home() {
           <h3 className="text-xl font-semibold mb-4">Projetos</h3>
           <div className="flex flex-col gap-6">
             {projects.map((project) => {
-              const ref = useScrollFadeIn<HTMLAnchorElement>(); // ✅ aqui corrigido
+              const ref = useScrollFadeIn<HTMLAnchorElement>();
               return (
                 <a
                   key={project.name}
