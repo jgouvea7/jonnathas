@@ -60,7 +60,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section ref={certRef} className="fade-in mt-13">
+        <section ref={certRef} className="fade-in mt-9">
           <h3 className="text-xl font-semibold mb-3">Certificações</h3>
           <div className="flex flex-wrap gap-4">
             <a
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section ref={skillsRef} className="fade-in mt-13">
+        <section ref={skillsRef} className="fade-in mt-9">
           <h3 className="text-xl font-semibold mb-4">Skills</h3>
           <div className="flex flex-wrap gap-2">
             {[
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-13">
+        <section className="mt-9">
           <h3 className="text-xl font-semibold mb-4">Projetos</h3>
           <div className="flex flex-col gap-6">
             {projects.map((project) => {
@@ -143,7 +143,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section ref={contactRef} className="fade-in mt-13 text-center">
+        <section ref={contactRef} className="fade-in mt-9 text-center">
           <h3 className="text-2xl font-semibold mb-2">Contato</h3>
           <p className="text-neutral-400 text-xl mb-4">Para mais informações!</p>
 
