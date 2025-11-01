@@ -16,7 +16,7 @@ export function useScrollFadeIn<T extends HTMLElement>() {
           observer.unobserve(element);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.05 }
     );
 
     observer.observe(element);

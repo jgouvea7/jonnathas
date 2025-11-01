@@ -6,6 +6,7 @@ export default function Home() {
   const sobreRef = useScrollFadeIn();
   const certRef = useScrollFadeIn();
   const skillsRef = useScrollFadeIn();
+  const projectRef = useScrollFadeIn()
   const contactRef = useScrollFadeIn();
 
   const projects = [
@@ -111,7 +112,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-9">
+        <section ref={projectRef} className="mt-9">
           <h3 className="text-xl font-semibold mb-4">Projetos</h3>
           <div className="flex flex-col gap-6">
             {projects.map((project) => {
