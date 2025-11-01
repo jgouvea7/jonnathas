@@ -47,7 +47,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="flex flex-col min-h-screen bg-neutral-800 text-white p-6">
+    <main className="flex min-h-screen items-center justify-center bg-neutral-800 text-white p-6">
       <div className="max-w-2xl w-full text-left">
         <h1 className="text-5xl font-bold mt-25 mb-2">Jonnathas de Gouvea</h1>
         <h2 className="text-2xl text-neutral-300 mb-5">Desenvolvedor Backend e Fullstack</h2>
