@@ -148,7 +148,7 @@ export default function Home() {
           <h3 className="text-2xl font-semibold mb-2">Contato</h3>
           <p className="text-neutral-400 text-xl mb-4">Para mais informações!</p>
 
-          <div className="flex items-center justify-center gap-6 mb-20">
+          <div className="flex items-center justify-center gap-6 mb-25">
             <a
               href="https://www.linkedin.com/in/jgouvea7"
               target="_blank"
