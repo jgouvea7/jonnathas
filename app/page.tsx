@@ -60,7 +60,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section ref={certRef} className="fade-in mt-8">
+        <section ref={certRef} className="fade-in mt-13">
           <h3 className="text-xl font-semibold mb-3">Certificações</h3>
           <div className="flex flex-wrap gap-4">
             <a
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section ref={skillsRef} className="fade-in mt-8">
+        <section ref={skillsRef} className="fade-in mt-13">
           <h3 className="text-xl font-semibold mb-4">Skills</h3>
           <div className="flex flex-wrap gap-2">
             {[
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-8">
+        <section className="mt-13">
           <h3 className="text-xl font-semibold mb-4">Projetos</h3>
           <div className="flex flex-col gap-6">
             {projects.map((project) => {
@@ -143,11 +143,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section ref={contactRef} className="fade-in mt-10 text-center">
+        <section ref={contactRef} className="fade-in mt-13 text-center">
           <h3 className="text-2xl font-semibold mb-2">Contato</h3>
           <p className="text-neutral-400 text-xl mb-4">Para mais informações!</p>
 
-          <div className="flex items-center justify-center gap-6">
+          <div className="flex items-center justify-center gap-6 mb-20">
             <a
               href="https://www.linkedin.com/in/jgouvea7"
               target="_blank"
@@ -178,7 +178,7 @@ export default function Home() {
               <img
                 src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
                 alt="Instagram"
-                className="w-7 h-7 filter invert mb-15"
+                className="w-7 h-7 filter invert"
               />
             </a>
           </div>
