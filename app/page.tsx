@@ -178,7 +178,7 @@ export default function Home() {
               <img
                 src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
                 alt="Instagram"
-                className="w-7 h-7 filter invert"
+                className="w-7 h-7 filter invert mb-15"
               />
             </a>
           </div>
