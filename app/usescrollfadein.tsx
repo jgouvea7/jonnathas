@@ -2,8 +2,8 @@
 
 import { useRef, useEffect } from "react";
 
-export function useScrollFadeIn() {
-  const ref = useRef<HTMLDivElement>(null);
+export function useScrollFadeIn<T extends HTMLElement>() {
+  const ref = useRef<T>(null);
 
   useEffect(() => {
     const element = ref.current;
