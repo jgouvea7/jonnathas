@@ -51,7 +51,7 @@ export default function Home() {
     <main className="flex min-h-screen items-center justify-center bg-neutral-800 text-white p-6">
       <div className="max-w-2xl w-full text-left">
         <h1 className="text-5xl font-bold mt-25 mb-2">Jonnathas de Gouvea</h1>
-        <h2 className="text-2xl text-neutral-300 mb-5">Desenvolvedor Backend e Fullstack</h2>
+        <h2 className="text-2xl text-blue-400 mb-5">Desenvolvedor Backend e Fullstack</h2>
 
         <section ref={sobreRef} className="fade-in mb-9">
           <h3 className="text-2xl font-semibold mb-2">Sobre mim</h3>
@@ -80,6 +80,22 @@ export default function Home() {
                 <p className="text-sm text-gray-400">Google Cloud Skills Boost</p>
               </div>
             </a>
+            <a
+              href="https://www.skills.google/public_profiles/bb127180-a945-4dfc-bd00-d964a4fa890e/badges/20329738"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 rounded-lg p-3 hover:bg-gray-800 transition-colors w-fit"
+            >
+              <img
+                src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000"
+                alt="Google Cloud Logo"
+                className="w-10 h-10"
+              />
+              <div>
+                <p className="font-semibold text-blue-400">Managing Cloud in Infrastructure with Terraform</p>
+                <p className="text-sm text-gray-400">Google Cloud Skills Boost</p>
+              </div>
+            </a>
           </div>
         </section>
 
@@ -90,6 +106,7 @@ export default function Home() {
               "TypeScript",
               "Java",
               "Python",
+              "Go",
               "Spring Boot",
               "NestJS",
               "FastAPI",
@@ -148,7 +165,7 @@ export default function Home() {
           <h3 className="text-2xl font-semibold mb-2">Contato</h3>
           <p className="text-neutral-400 text-xl mb-4">Para mais informações!</p>
 
-          <div className="flex items-center justify-center gap-6 mb-25">
+          <div className="flex items-center justify-center gap-6 mb-20">
             <a
               href="https://www.linkedin.com/in/jgouvea7"
               target="_blank"
