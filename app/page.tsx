@@ -22,7 +22,7 @@ export default function Home() {
       description:
         "Pipeline automatizado de alta performance para transcrição, tradução e sumarização de vídeos do YouTube usando modelos de IA.",
       technologies: ["Python"],
-      link: "https://github.com/jgouvea7/summarize-text/tree/main",
+      link: "https://github.com/jgouvea7/summarize-text",
     },
     {
       name: "Delivery",
