@@ -18,6 +18,13 @@ export default function Home() {
       link: "https://github.com/jgouvea7/multiPay",
     },
     {
+      name: "Summarize Text",
+      description:
+        "Pipeline automatizado de alta performance para transcrição, tradução e sumarização de vídeos do YouTube usando modelos de IA.",
+      technologies: ["Python"],
+      link: "https://github.com/jgouvea7/summarize-text/tree/main",
+    },
+    {
       name: "Delivery",
       description:
         "Sistema de delivery simulando pedidos e entregas, com microsserviços e comunicação assíncrona para alta escalabilidade e desempenho.",
