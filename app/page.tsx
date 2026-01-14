@@ -55,7 +55,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-neutral-800 text-white p-6">
+    <main className="flex min-h-screen items-center justify-center bg-neutral-900 text-white p-6">
       <div className="max-w-2xl w-full text-left">
         <h1 className="text-5xl font-bold mt-25 mb-2">Jonnathas de Gouvea</h1>
         <h2 className="text-2xl text-blue-400 mb-5">Desenvolvedor Backend e Fullstack</h2>
@@ -75,7 +75,7 @@ export default function Home() {
               href="https://www.skills.google/public_profiles/bb127180-a945-4dfc-bd00-d964a4fa890e/badges/16907479"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-lg p-3 hover:bg-gray-800 transition-colors w-fit"
+              className="glass-hover flex items-center gap-3 rounded-lg p-3 hover:bg-gray-800 transition-colors w-fit"
             >
               <img
                 src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000"
@@ -91,7 +91,7 @@ export default function Home() {
               href="https://www.skills.google/public_profiles/bb127180-a945-4dfc-bd00-d964a4fa890e/badges/20329738"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-lg p-3 hover:bg-gray-800 transition-colors w-fit"
+              className="glass-hover flex items-center gap-3 rounded-lg p-3 hover:bg-gray-800 transition-colors w-fit"
             >
               <img
                 src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000"
@@ -128,7 +128,7 @@ export default function Home() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="bg-blue-600/20 text-blue-400 rounded-full px-3 py-1 text-sm font-medium hover:bg-blue-600/40 transition cursor-pointer"
+                className="glass-hover bg-blue-600/20 text-blue-400 rounded-full px-3 py-1 text-sm font-medium hover:bg-blue-600/40 transition cursor-pointer"
               >
                 {skill}
               </span>
@@ -148,7 +148,7 @@ export default function Home() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="fade-in block rounded-lg px-3 py-3 hover:bg-gray-800 transition-colors"
+                  className="glass-hover fade-in block rounded-lg px-3 py-3 hover:bg-gray-800 transition-colors"
                 >
                   <h4 className="text-lg font-bold text-blue-400 mb-1">{project.name}</h4>
                   <p className="text-gray-300 text-sm mb-2">{project.description}</p>
@@ -194,15 +194,14 @@ export default function Home() {
                 className="w-7 h-7 filter invert"
               />
             </a>
-
             <a
-              href="https://www.instagram.com/jonnathas"
+              href="https://github.com/jgouvea7"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
-                alt="Instagram"
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+                alt="Github"
                 className="w-7 h-7 filter invert"
               />
             </a>
