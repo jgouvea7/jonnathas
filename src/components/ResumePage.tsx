@@ -125,7 +125,6 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
       transition={{ duration: 0.3, ease: "easeOut" }}
       className="h-[85vh] w-[96%] max-w-[1200px] overflow-hidden rounded-[20px] border border-slate-200/60 bg-slate-100 shadow-[0_45px_100px_-20px_rgba(15,23,42,0.3)] backdrop-blur-md"
     >
-      {/* Top bar macOS */}
       <div className="flex h-12 shrink-0 items-center justify-between border-b border-slate-100 bg-slate-100/80 px-4 backdrop-blur-md">
         <div className="flex w-[120px] items-center gap-2">
           <button
@@ -159,7 +158,6 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
         ref={containerRef}
         className="h-[calc(85vh-3rem)] overflow-y-auto scroll-smooth bg-slate-100 [font-family:var(--font-inter)]"
       >
-        {/* Home */}
         <section ref={homeRef} className="relative flex min-h-[77vh] flex-col items-center justify-center px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -178,7 +176,6 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
           </motion.div>
         </section>
 
-        {/* About */}
         <section ref={aboutRef} className="flex min-h-[77vh] flex-col items-center justify-center px-6 py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -211,7 +208,6 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
           </motion.div>
         </section>
 
-        {/* Skills */}
         <section ref={skillsRef} className="flex min-h-[77vh] flex-col items-center justify-center px-6 py-20">
           <div className="w-full max-w-5xl flex flex-col justify-start min-h-[50vh]">
             <div className="mb-16 text-center flex flex-col items-center">
@@ -257,7 +253,6 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
           </div>
         </section>
 
-        {/* Contact */}
         <section ref={contactRef} className="flex min-h-[77vh] flex-col items-center justify-center px-6 py-20 pb-32">
           <div className="w-full max-w-4xl">
             <div className="mb-16 text-center">

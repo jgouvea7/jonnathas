@@ -13,10 +13,8 @@ export default function Home() {
 
   return (
     <main className="relative w-full min-h-screen overflow-hidden bg-zinc-950">
-      {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vw] max-w-[1400px] h-[80vh] max-h-[1000px] bg-indigo-500/20 rounded-full blur-[120px] pointer-events-none"></div>
 
-      {/* Terminal Container */}
       <div className="relative z-10 flex w-full min-h-screen items-center justify-center p-4 md:p-8">
         <TerminalWindow onOpenResume={() => setView("resume")} onOpenDoom={() => setView("doom")} />
       </div>

@@ -12,10 +12,8 @@ export function TerminalInput({ onCommand, onTabSuggestions }: TerminalInputProp
     const [input, setInput] = useState("");
     const inputRef = useRef<HTMLInputElement>(null);
 
-    // Keep focus on the input when clicking anywhere
     useEffect(() => {
         const handleGlobalClick = () => {
-            // Don't focus if the text is being selected
             if (window.getSelection()?.toString()) return;
             inputRef.current?.focus();
         };
@@ -35,10 +33,8 @@ export function TerminalInput({ onCommand, onTabSuggestions }: TerminalInputProp
             const matches = AVAILABLE_COMMANDS.filter((cmd) => cmd.startsWith(input.toLowerCase()));
 
             if (matches.length === 1) {
-                // Autocomplete
                 setInput(matches[0]);
             } else if (matches.length > 1) {
-                // Return suggestions to parent to be printed
                 onTabSuggestions(input, matches);
             }
         }
@@ -59,11 +55,10 @@ export function TerminalInput({ onCommand, onTabSuggestions }: TerminalInputProp
                     spellCheck={false}
                     autoComplete="off"
                 />
-                {/* Blinking Cursor */}
                 <span
                     className="absolute h-[1.2em] w-2 bg-gray-400 animate-pulse pointer-events-none"
                     style={{
-                        left: `calc(${input.length} * 0.6em)`, // Approximation for monospace font
+                        left: `calc(${input.length} * 0.6em)`,
                         opacity: 0.8
                     }}
                 />

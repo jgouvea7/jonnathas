@@ -117,7 +117,6 @@ export function TerminalWindow({ onOpenResume, onOpenDoom }: TerminalWindowProps
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="w-[90%] max-w-[1100px] rounded-xl overflow-hidden shadow-[0_0_50px_-12px_rgba(0,0,0,0.8)] border border-mac-border/50 bg-[#1e1e1e]/85 backdrop-blur-2xl flex flex-col h-[70vh] max-h-[600px]"
         >
-            {/* macOS Window Title Bar */}
             <div className="h-8 bg-[#2d2d2d]/90 border-b border-mac-border/50 flex items-center px-4 shrink-0 justify-center relative">
                 <div className="absolute left-4 flex gap-2">
                     <div className="w-3 h-3 rounded-full bg-mac-red hover:bg-red-600 cursor-pointer shadow-inner"></div>
@@ -129,7 +128,6 @@ export function TerminalWindow({ onOpenResume, onOpenDoom }: TerminalWindowProps
                 </div>
             </div>
 
-            {/* Terminal Content Area */}
             <div className="flex-1 overflow-y-auto p-4 md:p-6 terminal-scrollbar text-sm md:text-base selection:bg-gray-700 selection:text-white pb-10">
                 <TerminalHistory history={history} />
                 <TerminalInput onCommand={onCommand} onTabSuggestions={onTabSuggestions} />
