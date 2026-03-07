@@ -18,8 +18,11 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Jonnathas | Portfolio",
+  title: "Jonnathas",
   description: "Terminal-based developer portfolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
