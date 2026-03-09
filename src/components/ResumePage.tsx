@@ -213,7 +213,7 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
             <div className="mb-16 text-center flex flex-col items-center">
               <span className="mb-8 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-slate-500">Skills</span>
 
-              <div className="flex flex-wrap gap-2 rounded-full border border-slate-200 bg-slate-200 p-1.5 shadow-sm">
+              <div className="flex flex-wrap gap-2 rounded-full border border-slate-200 bg-slate-100 p-1.5 shadow-sm">
                 {(["all", "backend", "frontend"] as SkillFilter[]).map((option) => (
                   <button
                     key={option}
