@@ -265,7 +265,7 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
                 href="https://linkedin.com/in/jgouvea7"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col items-center justify-center gap-4 rounded-[2rem] border border-slate-200/50 bg-white p-10 shadow-lg shadow-slate-200/30 transition-all hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50"
+                className="group flex flex-col items-center justify-center gap-4 rounded-[2rem] border border-slate-200/50 bg-slate-100 p-10 shadow-lg shadow-slate-200/30 transition-all hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50"
               >
                 <div className="rounded-full bg-blue-50 p-4 text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
                   <Linkedin size={32} />
@@ -275,7 +275,7 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
 
               <a
                 href="mailto:jonnathasg@gmail.com"
-                className="group flex flex-col items-center justify-center gap-4 rounded-[2rem] border border-slate-200/50 bg-white p-10 shadow-lg shadow-slate-200/30 transition-all hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50"
+                className="group flex flex-col items-center justify-center gap-4 rounded-[2rem] border border-slate-200/50 bg-slate-100 p-10 shadow-lg shadow-slate-200/30 transition-all hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50"
               >
                 <div className="rounded-full bg-slate-50 p-4 text-slate-600 transition-colors group-hover:bg-slate-900 group-hover:text-white">
                   <Mail size={32} />
@@ -287,7 +287,7 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
                 href="https://github.com/jgouvea7"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col items-center justify-center gap-4 rounded-[2rem] border border-slate-200/50 bg-white p-10 shadow-lg shadow-slate-200/30 transition-all hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50"
+                className="group flex flex-col items-center justify-center gap-4 rounded-[2rem] border border-slate-200/50 bg-slate-100 p-10 shadow-lg shadow-slate-200/30 transition-all hover:-translate-y-2 hover:shadow-xl hover:shadow-slate-200/50"
               >
                 <div className="rounded-full bg-slate-50 p-4 text-slate-600 transition-colors group-hover:bg-slate-900 group-hover:text-white">
                   <Github size={32} />
