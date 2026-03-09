@@ -188,7 +188,7 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
               <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-slate-500">About Me</span>
             </div>
 
-            <div className="rounded-[2rem] border border-slate-200/50 bg-white p-10 shadow-xl shadow-slate-200/50 md:p-16 text-center">
+            <div className="rounded-[2rem] bg-slate-100 p-10 md:p-16 text-center">
               <p className="text-xl leading-relaxed text-slate-700 md:text-2xl font-light">
                 I build reliable software with a focus on <strong className="font-semibold text-slate-900">backend architecture</strong>, performance, and scalable systems.
                 I enjoy solving complex problems and turning technical ideas into products that are stable, clear, and extremely maintainable.
@@ -241,7 +241,7 @@ export function ResumePage({ onBackToTerminal }: ResumePageProps) {
                   aria-hidden={skill.ghost}
                   className={`group flex aspect-[2/1] items-center justify-center rounded-2xl border p-6 shadow-sm transition-all ${skill.ghost
                     ? "invisible border-transparent bg-transparent shadow-none"
-                    : "border-slate-200 bg-white hover:-translate-y-1 hover:border-slate-300 hover:shadow-md"
+                    : "border-slate-200 bg-slate-100 hover:-translate-y-1 hover:border-slate-300 hover:shadow-md"
                     }`}
                 >
                   {!skill.ghost && (
