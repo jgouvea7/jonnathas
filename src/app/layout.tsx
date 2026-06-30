@@ -1,28 +1,21 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Sora } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-});
-
 const inter = Inter({
-  variable: "--font-inter",
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const sora = Sora({
-  variable: "--font-sora",
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
   title: "Jonnathas",
-  description: "Terminal-based developer portfolio",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  description: "Meu portfolio pessoal",
+  icons: "/favicon.svg",
 };
 
 export default function RootLayout({
@@ -31,12 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${jetbrainsMono.variable} ${inter.variable} ${sora.variable} font-mono antialiased bg-zinc-950 text-mac-text min-h-screen`}
-      >
-        {children}
-      </body>
+    <html lang="pt-BR" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <body className="font-sans bg-white text-black antialiased">{children}</body>
     </html>
   );
 }

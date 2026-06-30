@@ -1,33 +1,39 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme inline {
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-  --color-mac-red: #ff5f56;
-  --color-mac-yellow: #ffbd2e;
-  --color-mac-green: #27c93f;
-
-  --color-mac-bg: #1e1e1e;
-  --color-mac-header: #2d2d2d;
-  --color-mac-border: #333333;
-  --color-mac-text: #f8f8f2;
+  ::selection {
+    background-color: #06b6d4;
+    color: #fff;
+  }
 }
 
+@layer components {
+  .section-label {
+    @apply text-sm font-mono font-bold tracking-widest uppercase mb-8 block;
+  }
+
+  .brutal-border {
+    @apply border-2 border-black;
+  }
+
+  .brutal-card {
+    @apply brutal-border bg-white transition-all duration-200;
+  }
+
+  .brutal-card:hover {
+    @apply -translate-y-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
+  }
+
+  .brutal-button {
+    @apply inline-block brutal-border px-5 py-2.5 font-bold text-sm uppercase tracking-widest 
+           bg-black text-white hover:bg-white hover:text-black transition-colors duration-200;
+  }
 
 
-/* Base styles for the terminal */
-.terminal-scrollbar::-webkit-scrollbar {
-  width: 8px;
-}
-
-.terminal-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.terminal-scrollbar::-webkit-scrollbar-thumb {
-  background: #444;
-  border-radius: 4px;
-}
-
-.terminal-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
