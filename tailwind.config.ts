@@ -12,6 +12,10 @@ const config: Config = {
         sans: ["var(--font-inter)"],
         mono: ["var(--font-mono)"],
       },
+      colors: {
+        clay: "#c75c33",
+        paper: "#f4f1ea",
+      },
     },
   },
   plugins: [],

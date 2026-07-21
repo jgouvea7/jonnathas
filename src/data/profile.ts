@@ -1,7 +1,7 @@
 export interface Project {
   title: string;
   description: string;
-  image: string;
+  image?: string;
   tags: string[];
   github?: string;
   live?: string;
@@ -50,30 +50,39 @@ export const profile: {
   ],
   projects: [
     {
+      title: "Estokar",
+      description:
+        "Plataforma full-stack de gestão de estoque (web e mobile) com suporte offline, sincronização de dados, autenticação OAuth2 + JWT, CI/CD, deploy em Azure/Vercel, monitoramento com Sentry e Docker",
+      image: "/estokar/1782167957932.jpg",
+      tags: [
+        "TypeScript", "NestJS", "Next.js", "Expo", "Supabase", "PostgreSQL", "Azure", "Docker", "Sentry"],
+      github: "https://github.com/jgouvea7/estokar",
+      live: "https://estokar.vercel.app",
+    },
+    {
       title: "Grimoire",
       description:
-        "Plataforma de aprendizado com IA que transforma vídeos do YouTube em resumos, flashcards e quizzes. Aplicação full-stack com autenticação, gamificação RPG, arquitetura baseada em microsserviços e observabilidade com Prometheus e Grafana.",
+        "Plataforma com IA que transforma vídeos do YouTube em resumos, flashcards e quizzes. Aplicação full-stack com autenticação, gamificação RPG, arquitetura baseada em microsserviços e observabilidade com Prometheus e Grafana.",
       image: "/grimoire/1782837951060.jpg",
       tags: ["Python", "FastAPI", "PostgreSQL", "Docker", "Redis", "Next.js", "Prometheus", "Grafana", "Mistral 7B"],
       github: "https://github.com/jgouvea7/grimoire",
     },
     {
-      title: "DocFlow AI",
+      title: "API de detecção de fraude",
       description:
-        "Sistema de análise de documentos com IA desenvolvido para estudo de RAG. Utiliza Python, FastAPI, embeddings e banco de dados vetorial para permitir consultas em linguagem natural sobre documentos enviados pelos usuários.",
-      image: "/docflow/1781711625391.jpg",
-      tags: ["Spring Boot", "FastAPI", "PostgreSQL", "RabbitMQ", "Angular", "Docker", "Mistral 7B"],
-      github: "https://github.com/jgouvea7/docflow-ia",
+        "Sistema de detecção de fraude de alta performance desenvolvido para a Rinha de Backend 2026. Utiliza C e Hono (TypeScript), com engine ANN nativa otimizada com AVX2, KD-Tree para busca em 14 dimensões e carregamento de dados via mmap.",
+      tags: [
+      "C", "TypeScript", "Hono", "AVX2", "KD-Tree", "Docker"],
+      github: "https://github.com/jgouvea7/fraud-detection-api",
     },
     {
-      title: "Estokar",
+      title: "DocFlow AI",
       description:
-        "Plataforma full-stack de gestão de estoque (web e mobile), desenvolvida como projeto acadêmico com foco em uso real. Suporte offline com sincronização, autenticação segura OAuth2 + JWT, CI/CD, deploy Azure/Vercel, monitoramento Sentry e Docker.",
-      image: "/estokar/1782167957932.jpg",
-      tags: ["NestJS", "Next.js", "React Native", "PostgreSQL", "Azure"],
-      github: "https://github.com",
-      live: "https://estokar.vercel.app",
-    },
+        "Sistema de análise de documentos com IA desenvolvido para estudo de RAG. Combina Spring Boot e FastAPI para processamento de documentos, embeddings e banco de dados vetorial, permitindo consultas em linguagem natural.",
+      image: "/docflow/1781711625391.jpg",
+      tags: ["Java", "Python", "Spring Boot", "FastAPI", "PostgreSQL", "RabbitMQ", "Angular", "Docker", "Mistral 7B"],
+      github: "https://github.com/jgouvea7/docflow-ia",
+    }
   ],
   social: {
     github: "https://github.com/jgouvea7",

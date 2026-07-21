@@ -1,40 +1,22 @@
-import { profile } from "@/data/profile";
-
+import { ScrollReveal } from "@/components/scroll-reveal";
 export function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center px-6 pt-16"
+      className="relative min-h-screen flex flex-col justify-center px-6 pt-16 overflow-hidden bg-[#f6f4ee]"
     >
       <div className="max-w-7xl mx-auto w-full">
-        <p className="font-mono text-xs font-bold tracking-widest mb-4 text-cyan-500">
-          {profile.role.toUpperCase()}
-        </p>
-
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[0.85] tracking-tight">
-          {profile.name}
-        </h1>
-
-        <div className="mt-6 sm:mt-8 max-w-2xl">
-          <p className="text-base sm:text-lg leading-relaxed">
-            {profile.heroPhrase}
+        <ScrollReveal>
+          <h1 className="text-5xl md:text-7xl font-bold leading-[0.9] tracking-tight mb-4 relative z-10">
+            Jonnathas Gouvea
+          </h1>
+          <p className="font-mono text-xs font-bold tracking-[0.2em] text-clay relative z-10 uppercase">
+            Desenvolvedor Fullstack
           </p>
-        </div>
-
-        <div className="mt-8 sm:mt-10 flex gap-3">
-          <a href="#projects" className="brutal-button">
-            Ver Projetos
-          </a>
-          <a
-            href={`mailto:${profile.social.email}`}
-            className="brutal-button !border-cyan-500 !bg-white !text-cyan-500 hover:!bg-cyan-500 hover:!text-white"
-          >
-            Contato
-          </a>
-        </div>
+        </ScrollReveal>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-2 bg-cyan-500" />
+      <div className="absolute bottom-0 left-0 right-0 h-2 bg-clay z-10" />
     </section>
   );
 }
